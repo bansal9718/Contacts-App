@@ -1,3 +1,7 @@
+A Contact List App  , made using Node.js and Express.js with MongoDB as database.
+The Api's are written for registering , logging in , and maintain a contact list and feature to mark a phone number as spam and make the searching functionality very particular.
+
+
 *Steps to test the Application*
 
 1.Install Latest version of Node.js  in the System before running the App
