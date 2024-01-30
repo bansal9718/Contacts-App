@@ -1,0 +1,26 @@
+*Steps to test the Application*
+
+1.Install Latest version of Node.js  in the System before running the App
+2.Run npm init after importing as it will update all the depenencies 
+3.Check if any depenency not updated , install it manually by running "npm i package-name"
+
+4.In the package.json file 
+"scripts": {
+    "dev": "nodemon server.js"
+},
+is given , you can modify it for not using nodemon , instead you can use node server.js. 
+But for testing nodemon is preffered.
+
+5.Note that if you are using nodemon , the script made for genrating random sample data gets refreshed again if server restarts. So if you are registering for a new user ensure that the server does not restarts or else your registered user will also be lost. BEcause the data is deleted in every server restart and new set is generated.
+
+6.The environment Variables can be set accordingly and the localhost port also as per your system. I have used 8000 it can be used as any.
+
+7.The validations has not set on the phonenumber field as the random data generated the phonenumbers with differet formats and it was failing the validation. It can be set while not using sample data. I'll put Validations accordingly for a new user registration.
+
+8.Pls follow Validations , while registering for a new User.
+
+9.After installing everything, run the command "npm run dev" and it will start the server.
+
+10.Use http://localhost:PORT/api/v1/users/YOURPATH for testing. Put the port which you set in the environment variables.Although I have allowed all IP ADresses to access the databse.In case it doesn't works , pls let me know.
+
+10.The APIs can be tested using Postman or Insomnia tool.
